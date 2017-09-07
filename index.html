@@ -1,0 +1,392 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>MADANI Portofolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="icon" href="images/logo.png" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+<!-- tulisan kursor -->
+    <style type='text/css'>
+   	 #outerCircleText {
+    	font-style: italic;
+   		font-weight: bold;
+    	font-family: &#39;comic sans ms&#39;, verdana, arial;
+    	color: red;
+
+    	position: absolute;top: 0;left: 0;z-index: 3000;cursor: default;}
+   	 #outerCircleText div {position: relative;}
+   	 #outerCircleText div div {position: absolute;top: 0;left: 0;text-align: center;}
+
+    </style>
+   <script type='text/javascript'>
+    //<![CDATA[
+
+    ;(function(){
+    var msg = "!HERE!";
+    var size = 25;
+    var circleY = 0.75; var circleX = 2;
+    var letter_spacing = 5;
+    var diameter = 10;
+    var rotation = 0.2;
+    var speed = 0.3;
+    if (!window.addEventListener && !window.attachEvent || !document.createElement) return;
+
+    msg = msg.split('');
+    var n = msg.length - 1, a = Math.round(size * diameter * 0.208333), currStep = 20,
+    ymouse = a * circleY + 20, xmouse = a * circleX + 20, y = [], x = [], Y = [], X = [],
+    o = document.createElement('div'), oi = document.createElement('div'),
+    b = document.compatMode && document.compatMode != "BackCompat"? document.documentElement :
+
+    document.body,
+
+    mouse = function(e){
+    e = e || window.event;
+    ymouse = !isNaN(e.pageY)? e.pageY : e.clientY; // y-position
+    xmouse = !isNaN(e.pageX)? e.pageX : e.clientX; // x-position
+    },
+
+    makecircle = function(){ // rotation/positioning
+    if(init.nopy){
+    o.style.top = (b || document.body).scrollTop + 'px';
+    o.style.left = (b || document.body).scrollLeft + 'px';
+    };
+    currStep -= rotation;
+    for (var d, i = n; i > -1; --i){ // makes the circle
+    d = document.getElementById('iemsg' + i).style;
+    d.top = Math.round(y[i] + a * Math.sin((currStep + i) / letter_spacing) * circleY - 15) +
+
+    'px';
+    d.left = Math.round(x[i] + a * Math.cos((currStep + i) / letter_spacing) * circleX) + 'px';
+    };
+    },
+
+    drag = function(){ // makes the resistance
+    y[0] = Y[0] += (ymouse - Y[0]) * speed;
+    x[0] = X[0] += (xmouse - 20 - X[0]) * speed;
+    for (var i = n; i > 0; --i){
+    y[i] = Y[i] += (y[i-1] - Y[i]) * speed;
+    x[i] = X[i] += (x[i-1] - X[i]) * speed;
+    };
+    makecircle();
+    },
+
+    init = function(){ // appends message divs, & sets initial values for positioning arrays
+    if(!isNaN(window.pageYOffset)){
+    ymouse += window.pageYOffset;
+    xmouse += window.pageXOffset;
+    } else init.nopy = true;
+    for (var d, i = n; i > -1; --i){
+    d = document.createElement('div'); d.id = 'iemsg' + i;
+    d.style.height = d.style.width = a + 'px';
+    d.appendChild(document.createTextNode(msg[i]));
+    oi.appendChild(d); y[i] = x[i] = Y[i] = X[i] = 0;
+    };
+    o.appendChild(oi); document.body.appendChild(o);
+    setInterval(drag, 25);
+    },
+
+    ascroll = function(){
+    ymouse += window.pageYOffset;
+    xmouse += window.pageXOffset;
+    window.removeEventListener('scroll', ascroll, false);
+    };
+
+    o.id = 'outerCircleText'; o.style.fontSize = size + 'px';
+
+    if (window.addEventListener){
+    window.addEventListener('load', init, false);
+    document.addEventListener('mouseover', mouse, false);
+    document.addEventListener('mousemove', mouse, false);
+    if (/Apple/.test(navigator.vendor))
+    window.addEventListener('scroll', ascroll, false);
+    }
+    else if (window.attachEvent){
+    window.attachEvent('onload', init);
+    document.attachEvent('onmousemove', mouse);
+    };
+
+    })();
+    //]]>
+   </script>
+<!-- Header -->
+<div id="header">
+
+	<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48">
+							<a href="images/avatar.jpg"  >
+      							<img src="images/avatar.jpg">
+    						</a>	
+							</span>
+							<h1 id="title"><a href="https://github.com/DVCone"> DVCone</a></h1>
+							<p><span style="color:red">
+							<a href="#top" id="top-link" class="skel-layers-ignoreHref">WEB DEVELOPER</a> 
+							</span></p>
+						</div>
+
+                         <!-- Nav -->
+						<nav id="nav">
+							<ul>
+							  <li><a href="#about" id="about-link" class="skel-layers-ignoreHref">
+								<span class="icon fa-user" style="color: #ffff">About Me</span></a></li>
+							  <li><a href="#skill" id="skill-link" class="skel-layers-ignoreHref">
+								<span class="icon fa-th" style="color: #ffff">Skill</span></a></li>
+							  <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref">
+								<span class="icon fa-th" style="color: #ffff">Portfolio</span></a></li>
+							  <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref">
+							    <span class="icon fa-envelope" style="color: #ffff">Direct Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+<!-- Social Icons -->
+					  <span style="text-align: center;">
+					    <p>CONTACT ME:</p>
+					   </span>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/hakim.madani.370" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/DVCone" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.instagram.com/hakimmadani/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							
+						</ul>
+
+	</div>
+
+</div>
+
+<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+							<header>
+							<style type="text/css">
+							h2 {
+								color: red;
+							}
+							p {
+								color: red;
+							}
+						</style>
+								
+							</header>
+						</div>
+					</section>
+<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<a href="#about" class="image featured"><img src="images/aboutme.jpg" alt="" /></a>
+
+							<audio autoplay="play">
+ 								 <source src="audio1.ogg" type="audio/ogg">
+ 								 <source src="audio1.mp3" type="audio/mpeg">
+									Your browser does not support the audio element.
+							</audio>
+
+
+							<p>My name is MADANI, I am a young web developer who tries to hone skills in specialization of developer web backend especially in database. but no doubt will also my expertise in the frontend web developer.</p>
+
+						</div>
+					</section>
+<!-- skill-->
+					<section id="skill" class="two">
+						<div class="container">
+
+							<header>
+								<h2>skill</h2>
+							</header>
+
+							<h1 class="alt"><strong>
+								                <span style="color:red"> Hi! I'm MADANI, I will be glad if you call me with 
+								                 #DVCone <br />Nice to meet you, and thanks for coming!</span>
+								            </strong>
+							<h2 class="alt"><strong>
+							                     <span style="color:red">This is some of my abilities :</span>
+							                </strong>
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="http://html5.com/" class="image fit"><img src="images/html5.jpeg" alt="" /></a>
+										<header>
+											<h3>80%</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="https://id.wordpress.com/" class="image fit"><img src="images/wprss.png" alt="" /></a>
+										<header>
+											<h3>100%</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="http://php.net/" class="image fit"><img src="images/php.png" alt="" /></a>
+										<header>
+											<h3>40%</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="https://www.mysql.com/" class="image fit"><img src="images/sql.jpeg" alt="" /></a>
+										<header>
+											<h3>80%</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="http://css3.com/" class="image fit"><img src="images/css.jpeg" alt="" /></a>
+										<header>
+											<h3>50%</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#skill" class="image fit"><img src="images/desain.png" alt="" /></a>
+										<header>
+											<h3>50%</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+						</div>
+
+						<div class="bottom">
+
+					<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+ 							Date and Time.
+ 					</button>	<p id="demo"></p>
+
+
+					</section>
+<!-- Portofolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+
+							<h1 class="alt"><strong>
+								                <span style="color:red"> Hi! I'm MADANI, I will be glad if you call me with 
+								                 DVCone <br />Nice to meet you, and thanks for coming!</span>
+								            </strong>
+							<h2 class="alt"><strong>
+							                     <span style="color:red">some projects I've worked on</span>
+							                </strong>
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/vai.png" alt="" /></a>
+										<header>
+											<h3>VAI STUDIOS™</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/NONE.jpg" alt="" /></a>
+										<header>
+											<h3>On going</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/NONE.jpg" alt="" /></a>
+										<header>
+											<h3>On going</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/NONE.jpg" alt="" /></a>
+										<header>
+											<h3>On going</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/NONE.jpg" alt="" /></a>
+										<header>
+											<h3>On going</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/NONE.jpg" alt="" /></a>
+										<header>
+											<h3>On going</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+<!--Direct Contact -->
+					<section id="contact" class="five">
+						<div class="container">
+
+							<header><strong>
+								<h2>Direct Contact</h2>
+							</strong></header>
+
+							<p>If you need me for something Please contact me directly through EMAIL for quick response.</p>
+
+							<form method="post" action="mailto:dani2014riau@gmail.com">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+
+					</section>
+
+			</div>
+
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; 2017. All rights reserved HTML5 UP.</li><li>Design was edited by <a href="http://html5up.net">@DVCone</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
